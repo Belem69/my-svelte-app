@@ -59,7 +59,7 @@
 		line-height: 1.2;
 	}
 
-	.address { background-image: url(neural57.png) }
-	.email   { background-image: url(neural57.png) }
+	.address { background-image: url($lib/images/neural57.png) }
+	.email   { background-image: url($lib/images/neural57.png) }
 	.missing { color: #999 }
 </style>
