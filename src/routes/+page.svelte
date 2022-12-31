@@ -4,6 +4,8 @@
     import Editor from "$lib/Editor.svelte";
     import ContactCard from "$lib/ContactCard.svelte";
 
+    import neural from "$lib/images/neural.png";
+
     let counter = 0;
     setInterval( ()=> counter+=1, 1000);
 </script>
@@ -15,6 +17,9 @@
             {counter}
         </p>
     </Box>
+
+
+    <!--img width='50px' src={neural} alt="SvelteKit logo" /-->
 
     <Box>
         <Editor />
