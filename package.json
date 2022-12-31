@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "vite dev --host",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -18,5 +18,10 @@
 		"typescript": "^4.9.3",
 		"vite": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@codemirror/lang-javascript": "^6.1.2",
+		"codemirror": "^6.0.1",
+		"svelte-codemirror-editor": "^1.1.0"
+	}
 }
