@@ -2,14 +2,17 @@
     import Box from "$lib/Box.svelte";
     import Clock from "$lib/Clock.svelte";
     import Editor from "$lib/Editor.svelte";
+    import ContactCard from "$lib/ContactCard.svelte";
+
+    let counter = 0;
+    setInterval( ()=> counter+=1, 1000);
 </script>
 
 <div class="container">
     <Box>
         <h1>Welcome to SvelteKit</h1>
         <p>
-            Visite <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the
-            documentation
+            {counter}
         </p>
     </Box>
 
@@ -18,8 +21,17 @@
     </Box>
 
     <div class="clock">
-        <Clock /><Clock />
+        <Clock />
     </div>
+    
+    <ContactCard>
+        <span slot="name">Popeye</span>
+        <span slot="address">
+            29 rue  Wallaby Way<br>
+            Sydney
+        </span>
+        <span slot="email">toto@proton.me</span>
+    </ContactCard>
 </div>
 
 <style>
@@ -31,6 +43,10 @@
 
     h1 {
         background-color: #cc1e1e;
+        text-align: center;
+    }
+
+    p {
         text-align: center;
     }
 

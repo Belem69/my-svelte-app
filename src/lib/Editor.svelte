@@ -7,7 +7,7 @@
     setInterval( ()=> counter++, 1000);
 </script>
 
-<div class='title'>Codemirror6 since {counter}s</div>
+<div class='title'>💫CM6🚀 {counter}s</div>
 <CodeMirror
     bind:value
     lang={javascript()}
@@ -17,6 +17,9 @@
             width: "100%",
             maxWidth: "100%",
             height: "10rem",
+            border: "dashed 2px salmon",
+            borderRadius: "10px",
+            overflow: "hidden"
         },
     }}
 />
