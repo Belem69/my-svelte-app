@@ -7,7 +7,7 @@
     import neural from "$lib/images/neural.png";
 
     let counter = 0;
-    setInterval( ()=> counter+=1, 1000);
+    setInterval(() => (counter += 1), 1000);
 </script>
 
 <div class="container">
@@ -18,8 +18,7 @@
         </p>
     </Box>
 
-
-    <!--img width='50px' src={neural} alt="SvelteKit logo" /-->
+    <img class="neural-image" width="100px" src={neural} alt="SvelteKit logo" />
 
     <Box>
         <Editor />
@@ -28,11 +27,11 @@
     <div class="clock">
         <Clock />
     </div>
-    
+
     <ContactCard>
         <span slot="name">Popeye</span>
         <span slot="address">
-            29 rue  Wallaby Way<br>
+            29 rue Wallaby Way<br />
             Sydney
         </span>
         <span slot="email">toto@proton.me</span>
@@ -59,4 +58,21 @@
         display: flex;
         width: 50%;
     }
+
+    /* neural image rotation */
+    .neural-image {
+        margin: 20px;
+        animation: rotation 42s infinite linear;
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(359deg);
+        }
+    }
+    /* end neural image rotation */
+    
 </style>
