@@ -4,7 +4,7 @@
     import Editor from "$lib/Editor.svelte";
     import ContactCard from "$lib/ContactCard.svelte";
 
-    import neural from "$lib/images/neural.png";
+    import neural from "$lib/images/earth640.png";
 
     let counter = 0;
     setInterval(() => (counter += 1), 1000);
@@ -62,7 +62,7 @@
     /* neural image rotation */
     .neural-image {
         margin: 20px;
-        animation: rotation 42s infinite linear;
+        animation: rotation 69s infinite linear;
     }
 
     @keyframes rotation {
@@ -70,9 +70,7 @@
             transform: rotate(0deg);
         }
         to {
-            transform: rotate(359deg);
-        }
+            transform: rotate(359deg);        }
     }
     /* end neural image rotation */
-    
 </style>
