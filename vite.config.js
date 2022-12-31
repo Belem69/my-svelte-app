@@ -4,7 +4,7 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
 	plugins: [sveltekit()],
 	optimizeDeps: {
-        exclude: ["codemirror", "@codemirror/language-javascript" /* ... */],
+        exclude: ["codemirror", "@codemirror/language-javascript", "@codemirror/theme-one-dark" /* ... */],
     }
 };
 
