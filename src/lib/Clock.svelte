@@ -18,6 +18,8 @@
         clearInterval(interval);
       };
     });
+
+  
   </script>
   
   <svg viewBox='-50 -50 100 100'>

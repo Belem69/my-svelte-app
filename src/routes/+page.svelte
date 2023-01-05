@@ -8,6 +8,16 @@
 
     let counter = 0;
     setInterval(() => (counter += 1), 1000);
+
+    class Bot {
+        constructor(name) {
+            this.name = name;
+        }
+
+        sayHi() {
+            console.log(`Hi, I'm ${this.name}`);
+        }
+    }
 </script>
 
 <div class="container">
