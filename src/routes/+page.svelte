@@ -7,17 +7,7 @@
     import neural from "$lib/images/earth640.png";
 
     let counter = 0;
-    setInterval(() => (counter += 1), 1000);
-
-    class Bot {
-        constructor(name) {
-            this.name = name;
-        }
-
-        sayHi() {
-            console.log(`Hi, I'm ${this.name}`);
-        }
-    }
+    setInterval(() => (counter += 1), 1000); 
 </script>
 
 <div class="container">
@@ -80,7 +70,8 @@
             transform: rotate(0deg);
         }
         to {
-            transform: rotate(359deg);        }
+            transform: rotate(359deg);
+        }
     }
     /* end neural image rotation */
 </style>
