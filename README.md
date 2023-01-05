@@ -1,6 +1,6 @@
 # create-svelte
 
-i made some change from firefox belem69
+i made some change from firefox belem69, and again with firefox2 branch
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
